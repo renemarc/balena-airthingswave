@@ -1,0 +1,18 @@
+#
+# AirthingsWave-to-MQTT configuration file
+#
+# You can either hardcode MQTT broker configurations here, or use environment
+# variables (pre-filled below), or a mix of both. This file will be parsed for
+# any environment variables and the resulting output used as the actual
+# configuration file.
+#
+
+mqtt:
+  broker: "${MQTT_BROKER}"
+  port: "${MQTT_PORT}"
+  username: "${MQTT_USERNAME}"
+  password: "${MQTT_PASSWORD}"
+
+waves:
+  - name: "${WAVES_NAME_1}"
+    addr: "${WAVES_ADDR_1}"
