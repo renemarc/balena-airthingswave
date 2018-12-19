@@ -116,17 +116,17 @@ Either modify the [`config.yaml`](./config.yaml) file with your MQTT and Airthin
 I **strongly** suggest simply using environment variables, either at the whole fleet level, at the single device level, or at a mix of both. Configuration is easier to update this way and [if you live in a McMansion](https://www.ted.com/talks/kate_wagner_i_hate_mcmansions_and_you_should_too) you can provision multiple devices with the same codebase. Yay!
 
 ```sh
-ENV MQTT_BROKER   192.168.1.1
-ENV MQTT_PORT     1883
-ENV MQTT_USERNAME user
-ENV MQTT_PASSWORD super-secret-password
+MQTT_BROKER   192.168.1.1
+MQTT_PORT     1883
+MQTT_USERNAME user
+MQTT_PASSWORD super-secret-password
 
-ENV WAVES_NAME_1  radon/basement
-ENV WAVES_ADDR_1  cc:78:ab:00:00:0a
-ENV WAVES_NAME_2  radon/bedroom
-ENV WAVES_ADDR_2  cc:78:ab:00:00:0b
-ENV WAVES_NAME_3  radon/garage
-ENV WAVES_ADDR_3  cc:78:ab:00:00:0c
+WAVES_NAME_1  radon/basement
+WAVES_ADDR_1  cc:78:ab:00:00:0a
+WAVES_NAME_2  radon/bedroom
+WAVES_ADDR_2  cc:78:ab:00:00:0b
+WAVES_NAME_3  radon/garage
+WAVES_ADDR_3  cc:78:ab:00:00:0c
 ```
 
 The Waves names are used as MQTT topic prefixes, so name them however you prefer. If you have more than one Wave that you want to query, do modify the [`config.yaml`](./config.yaml) file to add more entries.

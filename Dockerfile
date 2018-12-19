@@ -13,7 +13,7 @@ FROM balenalib/raspberry-pi-alpine:latest
 
 # Declare build environment variables
 ENV AIRTHINGSWAVE_VERSION 0.2
-ENV VERSION 0.2
+ENV VERSION 0.2.1
 ENV CRON_PERIOD hourly
 
 # Label image with metadata
@@ -35,6 +35,7 @@ RUN apk add \
       bluez \
       g++ \
       glib-dev \
+      linux-headers \
       make \
       py-setuptools \
  && pip install --no-cache-dir \
@@ -48,6 +49,7 @@ RUN apk add \
  && apk del \
       g++ \
       glib-dev \
+      linux-headers \
       make \
       py-setuptools
 
