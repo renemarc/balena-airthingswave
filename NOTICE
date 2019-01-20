@@ -1,0 +1,15 @@
+Balena AirthingsWave
+Copyright (c) 2018 René-Marc Simard @renemarc
+Licensed under the Apache License 2.0
+https://github.com/renemarc/balena-airthingswave
+
+This product includes software from the airthingswave-mqtt project
+* Copyright (c) 2018 Herb Peyerl <free-as-in@beer.org>
+* Portions Copyright (c) 2018 Airthings AS
+* Licensed under the MIT License
+* https://github.com/hpeyerl/airthingswave-mqtt
+
+This product includes software from find_wave.py
+* Copyright (c) 2018 Airthings AS
+* Licensed under the MIT License
+* http://airthings.com/tech/find_wave.py

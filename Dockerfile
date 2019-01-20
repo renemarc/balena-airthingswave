@@ -5,7 +5,10 @@
 # balenaEngine/Docker builds or Docker Hub.
 #
 # Available base images:
-# https://www.balena.io/docs/reference/base-images/base-images/
+#   https://www.balena.io/docs/reference/base-images/base-images/
+#
+# Copyright (c) 2018 René-Marc Simard
+# SPDX-License-Identifier: Apache-2.0
 #
 
 # Declare pre-build variables
@@ -16,16 +19,28 @@ FROM balenalib/${DEVICE_NAME}-alpine-python:2
 
 # Declare build variables
 ARG AIRTHINGSWAVE_VERSION=0.2
-ARG VERSION=0.2.2
+ARG VERSION=0.2.3
 
 # Label image with metadata
-LABEL org.label-schema.description="Airthings Wave radon detector bridge for single-board computers." \
+LABEL maintainer="René-Marc Simard @renemarc" \
+      org.opencontainers.image.authors="René-Marc Simard @renemarc" \
+      org.opencontainers.image.description="Airthings Wave radon detector bridge for single-board computers" \
+      org.opencontainers.image.documentation="https://github.com/renemarc/balena-airthingswave" \
+      org.opencontainers.image.licenses="Apache-2.0" \
+      org.opencontainers.image.source="git@github.com:renemarc/balena-airthingswave" \
+      org.opencontainers.image.title="balena AirthingsWave" \
+      org.opencontainers.image.url="https://airthings.com/wave/" \
+      org.opencontainers.image.vendor="René-Marc Simard" \
+      org.opencontainers.image.version="${VERSION}" \
       org.label-schema.docker.cmd="docker run --detach --restart=unless-stopped --env-file=env.list --net=host --cap-add=NET_ADMIN --name=airthingswave \$(docker build --quiet .)" \
       org.label-schema.docker.cmd.debug="docker run -it --rm --env-file=env.list --net=host --cap-add=NET_ADMIN --name=airthingswave \$(docker build --quiet .) bash" \
-      org.label-schema.name="balena AirthingsWave" \
-      org.label-schema.url="https://airthings.com/wave/" \
-      org.label-schema.vcs-url="https://github.com/renemarc/balena-airthingswave" \
-      org.label-schema.version=${VERSION} \
+      org.label-schema.docker.params="MQTT_BROKER=string   address of MQTT broker, \
+MQTT_PORT=integer    port number of MQTT broker, \
+MQTT_USERNAME=string MQTT broker user, \
+MQTT_PASSWORD=string MQTT broker user secret, \
+WAVES_NAME_1=string  MQTT topic prefix, \
+WAVES_ADDR_1=string  Airthings Wave MAC address" \
+      org.label-schema.usage="/usr/src/app/README.md" \
       org.label-schema.schema-version="1.0"
 
 # Setup application directory
@@ -58,7 +73,7 @@ RUN apk add \
 ARG CRON_PERIOD=hourly
 COPY ["crontask.sh", "/etc/periodic/${CRON_PERIOD}/airthingswave-mqtt"]
 COPY ["docker-entrypoint.sh", "/usr/local/bin/"]
-COPY ["config.yaml", "start.sh", "./"]
+COPY ["config.yaml", "README.md", "start.sh", "./"]
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 

@@ -62,7 +62,7 @@ Of course you _could_ do all of this on your own, but do you _really_ want to mi
 
 1. At least one [Airthings Wave radon detector](https://airthings.com/wave/).
 2. Your favourite [Internet of Things](https://en.wikipedia.org/wiki/Internet_of_things) (IoT) device that offers both Bluetooth Low Energy (BLE) and network access, like the inexpensive [Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/).
-3. Working access to an MQTT broker, either [a public one](https://github.com/mqtt/mqtt.github.io/wiki/public_brokers), your own hosted [Mosquitto](https://mosquitto.org/) instance or [the Home Assistant addon](https://www.home-assistant.io/addons/mosquitto/).
+3. Working access to an MQTT broker, either [a public one](https://github.com/mqtt/mqtt.github.io/wiki/public_brokers), your own hosted [Mosquitto](https://mosquitto.org/) instance or [the Home Assistant add-on](https://www.home-assistant.io/addons/mosquitto/).
 4. (Recommended) [A free-tier account](https://dashboard.balena-cloud.com/signup) on [balenaCloud](https://balena-cloud.com/) along with [a properly set SSH public key](https://www.balena.io/docs/learn/getting-started/raspberrypi3/nodejs/#adding-an-ssh-key) into your account.
 5. (Recommended) [The balena command-line tools](https://www.balena.io/docs/reference/cli/). Do read up on their [friendly development guidelines](https://www.balena.io/docs/learn/develop/local-mode/).
 
@@ -259,14 +259,23 @@ docker run --detach --restart=unless-stopped \
 
 <p align="right"><a href="#top" title="Back to top">🔝</a></p>
 
-## Alternatives ⚛️
+## Alternatives ⚛
 
 Other options exist, should you wish to try something else:
 
-- [The official Airthings hub](https://airthings.com/hub/): Commercial solution, plug-n-play, supported.
-- [airthingswave-mqtt](https://github.com/hpeyerl/airthingswave-mqtt) by [**@hpeyerl**](https://github.com/hpeyerl): The AirthingsWave-to-MQTT module used in this project, also vailable on [the Python Package Index](https://pypi.org/project/airthingswave-mqtt/).
-- [Radonwave](https://github.com/marcelm/radonwave) by [**@marcelm**](https://github.com/marcelm): Python script that outputs a reading of a given Airthings Wave.
-- [read_wave.py](https://airthings.com/raspberry-pi/) by [Airthings](https://airthings.com): A simple Python script that demonstrates how to read an Airthings Wave data.
+### Community projects 🌱
+
+- [Airthings MQTT Bridge via an ESP32](https://github.com/sabeechen/AirthingsMQTT) by [**@sabeechen**](https://github.com/sabeechen): ESP32-to-MQTT Arduino sketch for super low-cost, always-on bridges.
+- [airthingswave-mqtt](https://github.com/hpeyerl/airthingswave-mqtt) by [**@hpeyerl**](https://github.com/hpeyerl): The AirthingsWave-to-MQTT module used in this project, also available on [the Python Package Index](https://pypi.org/project/airthingswave-mqtt/).
+- [homeassistant-airthings](https://github.com/gkreitz/homeassistant-airthings) by [**@gkreitz**](https://github.com/gkreitz): Home Assistant sensor for Airthings Wave Plus.
+- [Radonwave](https://github.com/marcelm/radonwave) by [**@marcelm**](https://github.com/marcelm): Python script that outputs a reading for a given Airthings Wave.
+
+### Official solutions 👮
+
+- [Airthings hub](https://airthings.com/hub/): Commercial hardware product, plug-n-play, supported.
+- [Android](https://play.google.com/store/apps/details?id=com.airthings.airthings) and [iOS mobile apps](https://itunes.apple.com/app/airthings-wave/id1175388795): Best when using nearby always-on tablets or old cellphones, sending data back to Airthings servers.
+- [Airthings dashboard](https://airthings.com/dashboard/): Use your favourite web scraping technique to read back your data sent in by Airthings' hub or mobile apps.
+- [Wave Sensor Reader](https://github.com/Airthings/wave-reader) by [**@Airthings**](https://github.com/Airthings): A simple Python script that reads a Wave's data.
 
 <div align="center">
     <figure>
@@ -286,7 +295,9 @@ Want to suggest some Docker improvements? Got some fringe hardware that you used
 
 ## Thanks 💕
 
-This Docker container is based on [airthingswave-mqtt](https://github.com/hpeyerl/airthingswave-mqtt) by Herb Peyerl ([**@hpeyerl**](https://github.com/hpeyerl)) and [the discovery code](https://airthings.com/raspberry-pi/) by [Airthings](https://airthings.com/).
+This Docker container is based on [airthingswave-mqtt](https://github.com/hpeyerl/airthingswave-mqtt) <sup>[MIT License]</sup> by Herb Peyerl ([**@hpeyerl**](https://github.com/hpeyerl)) and [the discovery code](https://airthings.com/raspberry-pi/) <sup>[MIT License]</sup> by [Airthings](https://airthings.com/).
+
+Copyright © 2018, René-Marc Simard. Project released under [Apache Licence 2.0](./LICENSE) with [additional notices available here](./NOTICE).
 
 <p align="right"><a href="#top" title="Back to top">🔝</a></p>
 

@@ -1,5 +1,11 @@
 #
 # Markdownlint configuration
 #
+# Usage:
+#   mdl README.md
+#
+# Additional info:
+#   https://github.com/markdownlint/markdownlint
+#
 
 style "./markdownlint.rb"
