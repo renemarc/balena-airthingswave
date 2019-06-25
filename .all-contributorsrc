@@ -25,6 +25,15 @@
         "ideas",
         "plugin"
       ]
+    },
+    {
+      "login": "grangemd",
+      "name": "grangemd",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/20445621?v=4",
+      "profile": "https://github.com/grangemd",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
