@@ -296,7 +296,7 @@ Other options exist, should you wish to try something else:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://renemarc.com/"><img src="https://avatars3.githubusercontent.com/u/13276793?v=4" width="100px;" alt="René-Marc Simard"/><br /><sub><b>René-Marc Simard</b></sub></a><br /><a href="https://github.com/renemarc/balena-airthingswave/commits?author=renemarc" title="Code">💻</a> <a href="https://github.com/renemarc/balena-airthingswave/commits?author=renemarc" title="Documentation">📖</a></td><td align="center"><a href="https://www.beer.org/blog/"><img src="https://avatars0.githubusercontent.com/u/6561217?v=4" width="100px;" alt="Herb Peyerl"/><br /><sub><b>Herb Peyerl</b></sub></a><br /><a href="#ideas-hpeyerl" title="Ideas, Planning, & Feedback">🤔</a></td></tr></table>
+<table><tr><td align="center"><a href="https://renemarc.com/"><img src="https://avatars3.githubusercontent.com/u/13276793?v=4" width="100px;" alt="René-Marc Simard"/><br /><sub><b>René-Marc Simard</b></sub></a><br /><a href="https://github.com/renemarc/balena-airthingswave/commits?author=renemarc" title="Code">💻</a> <a href="https://github.com/renemarc/balena-airthingswave/commits?author=renemarc" title="Documentation">📖</a></td><td align="center"><a href="https://www.beer.org/blog/"><img src="https://avatars0.githubusercontent.com/u/6561217?v=4" width="100px;" alt="Herb Peyerl"/><br /><sub><b>Herb Peyerl</b></sub></a><br /><a href="#ideas-hpeyerl" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/hpeyerl/airthingswave-mqtt" title="Plugin/utility libraries">🔌</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
