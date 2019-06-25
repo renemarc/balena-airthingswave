@@ -296,7 +296,7 @@ Other options exist, should you wish to try something else:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://renemarc.com/"><img src="https://avatars3.githubusercontent.com/u/13276793?v=4" width="100px;" alt="René-Marc Simard"/><br /><sub><b>René-Marc Simard</b></sub></a><br /><a href="https://github.com/renemarc/balena-airthingswave/commits?author=renemarc" title="Code">💻</a> <a href="https://github.com/renemarc/balena-airthingswave/commits?author=renemarc" title="Documentation">📖</a></td></tr></table>
+<table><tr><td align="center"><a href="https://renemarc.com/"><img src="https://avatars3.githubusercontent.com/u/13276793?v=4" width="100px;" alt="René-Marc Simard"/><br /><sub><b>René-Marc Simard</b></sub></a><br /><a href="https://github.com/renemarc/balena-airthingswave/commits?author=renemarc" title="Code">💻</a> <a href="https://github.com/renemarc/balena-airthingswave/commits?author=renemarc" title="Documentation">📖</a></td><td align="center"><a href="https://www.beer.org/blog/"><img src="https://avatars0.githubusercontent.com/u/6561217?v=4" width="100px;" alt="Herb Peyerl"/><br /><sub><b>Herb Peyerl</b></sub></a><br /><a href="#ideas-hpeyerl" title="Ideas, Planning, & Feedback">🤔</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
@@ -320,7 +320,7 @@ Copyright © 2018, René-Marc Simard. Project released under [Apache Licence 2.0
 
 [img-contribute]:https://img.shields.io/badge/pull_requests-welcome-brightgreen.svg?logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTYsM0EzLDMgMCAwLDEgOSw2QzksNy4zMSA4LjE3LDguNDIgNyw4LjgzVjE1LjE3QzguMTcsMTUuNTggOSwxNi42OSA5LDE4QTMsMyAwIDAsMSA2LDIxQTMsMyAwIDAsMSAzLDE4QzMsMTYuNjkgMy44MywxNS41OCA1LDE1LjE3VjguODNDMy44Myw4LjQyIDMsNy4zMSAzLDZBMywzIDAgMCwxIDYsM002LDVBMSwxIDAgMCwwIDUsNkExLDEgMCAwLDAgNiw3QTEsMSAwIDAsMCA3LDZBMSwxIDAgMCwwIDYsNU02LDE3QTEsMSAwIDAsMCA1LDE4QTEsMSAwIDAsMCA2LDE5QTEsMSAwIDAsMCA3LDE4QTEsMSAwIDAsMCA2LDE3TTIxLDE4QTMsMyAwIDAsMSAxOCwyMUEzLDMgMCAwLDEgMTUsMThDMTUsMTYuNjkgMTUuODMsMTUuNTggMTcsMTUuMTdWN0gxNVYxMC4yNUwxMC43NSw2TDE1LDEuNzVWNUgxN0EyLDIgMCAwLDEgMTksN1YxNS4xN0MyMC4xNywxNS41OCAyMSwxNi42OSAyMSwxOE0xOCwxN0ExLDEgMCAwLDAgMTcsMThBMSwxIDAgMCwwIDE4LDE5QTEsMSAwIDAsMCAxOSwxOEExLDEgMCAwLDAgMTgsMTdaIiBmaWxsPSIjZmZmZmZmIiAvPjwvc3ZnPgo=&maxAge=86400
 
-[img-contributors]:https://img.shields.io/badge/all_contributors-1-orange.svg?logo=github&maxAge=21600
+[img-contributors]:https://img.shields.io/badge/all_contributors-2-orange.svg?logo=github&maxAge=21600
 
 [img-docker-hub]:https://img.shields.io/docker/automated/renemarc/balena-airthingswave.svg?logo=docker&maxAge=21600
 
