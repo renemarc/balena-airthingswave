@@ -1,0 +1,14 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "badgeTemplate": "https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg",
+  "contributors": [],
+  "contributorsPerLine": 7,
+  "projectName": "balena-airthingswave",
+  "projectOwner": "renemarc",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
