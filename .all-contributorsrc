@@ -34,6 +34,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "robmarkcole",
+      "name": "Robin",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11855322?v=4",
+      "profile": "https://www.hackster.io/robin-cole",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
