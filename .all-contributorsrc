@@ -5,7 +5,18 @@
   "imageSize": 100,
   "commit": false,
   "badgeTemplate": "https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "renemarc",
+      "name": "René-Marc Simard",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/13276793?v=4",
+      "profile": "https://renemarc.com/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
   "contributorsPerLine": 7,
   "projectName": "balena-airthingswave",
   "projectOwner": "renemarc",
