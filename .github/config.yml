@@ -39,7 +39,7 @@ requestInfoReplyComment: >-
   this issue/pr! 😃
 
 # Label to be added to Issues and PRs with insufficient information given
-requestInfoLabelToAdd: more-information-needed
+requestInfoLabelToAdd: question
 
 # Default titles to check against for lack of descriptiveness
 requestInfoDefaultTitles:

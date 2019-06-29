@@ -11,7 +11,7 @@
 daysUntilClose: 14
 
 # Label requiring a response
-responseRequiredLabel: more-information-needed
+responseRequiredLabel: question
 
 # Comment to post when closing an Issue for lack of response. Set to `false` to disable
 closeComment: >
