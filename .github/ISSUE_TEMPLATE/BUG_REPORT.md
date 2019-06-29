@@ -1,6 +1,9 @@
 ---
 name: "🐛 Bug Report"
-about: Alert about a reproducible bug or regression in this project.
+about: "Alert about a reproducible bug or regression in this project."
+title: "Bug:  "
+labels: "bug"
+assignees: ""
 ---
 
 # Bug Report
@@ -13,3 +16,9 @@ about: Alert about a reproducible bug or regression in this project.
 
 ## Environment Info
 <!-- You *did* test using the latest release, right? 😉 -->
+
+## Debug Log (if any)
+
+```text
+
+```

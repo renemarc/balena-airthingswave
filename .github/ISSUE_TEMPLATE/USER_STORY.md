@@ -1,6 +1,9 @@
 ---
 name: "👤 Agile User Story"
-about: Suggest an objective from a user's perspective.
+about: "Suggest an objective from a user's perspective."
+title: "User Story: "
+labels: "enhancement"
+assignees: ""
 ---
 
 # User Story
