@@ -19,7 +19,7 @@ FROM balenalib/${DEVICE_NAME}-alpine-python:2
 
 # Declare build variables
 ARG AIRTHINGSWAVE_VERSION=0.2
-ARG VERSION=0.2.3
+ARG VERSION=0.2.4
 
 # Label image with metadata
 LABEL maintainer="René-Marc Simard @renemarc" \

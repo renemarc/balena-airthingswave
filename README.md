@@ -155,7 +155,7 @@ Which MAC address to use? Leave that empty for now and [proceed to the first run
             <a href="https://www.youtube.com/watch?v=_J3VeogFUOs" title="Video: There can be only one"><img src="http://i.imgur.com/G4yeJJo.jpg" alt="There can be only one" width="300"></a>
         </div>
         <figcaption>
-            <p><strong>There should have only been one Highlander movie too…</strong></p>
+            <p><strong>There should have only been one <em>Highlander</em> movie too…</strong></p>
         </figcaption>
     </figure>
 </div>
