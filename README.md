@@ -160,7 +160,7 @@ Which MAC address to use? Leave that empty for now and [proceed to the first run
     </figure>
 </div>
 
-SSH into your device (only if _development mode_ was selected earlier) or use the balenaCloud app dashboard terminal to [find your Wave's MAC address](https://airthings.com/raspberry-pi/) by issuing this command:
+SSH into your device (only if _development mode_ was selected earlier) or use the balenaCloud app dashboard terminal to [find your Wave's MAC address](https://www.airthings.com/blog/us/raspberry-pi) by issuing this command:
 
 ```shell
 python /usr/src/app/find_wave.py

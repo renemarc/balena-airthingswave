@@ -57,7 +57,7 @@ RUN apk add \
  && pip install --no-cache-dir \
       airthingswave-mqtt==${AIRTHINGSWAVE_VERSION} \
       PyYAML \
- && wget airthings.com/tech/find_wave.py \
+ && wget www.airthings.com/tech/find_wave.py \
  && find /usr/local \
       \( -type d -a -name test -o -name tests \) \
       -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
