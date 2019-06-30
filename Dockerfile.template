@@ -63,9 +63,9 @@ RUN apk add \
 
 # Copy project files in their proper locations
 ARG CRON_PERIOD=hourly
-COPY ["crontask.sh", "/etc/periodic/${CRON_PERIOD}/airthingswave-mqtt"]
-COPY ["docker-entrypoint.sh", "/usr/local/bin/"]
-COPY ["config.yaml", "README.md", "start.sh", "./"]
+COPY ["docker/crontask.sh", "/etc/periodic/${CRON_PERIOD}/airthingswave-mqtt"]
+COPY ["docker/docker-entrypoint.sh", "/usr/local/bin/"]
+COPY ["docker/config.yaml", "docker/start.sh", "README.md", "./"]
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 

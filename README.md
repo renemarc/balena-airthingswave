@@ -123,7 +123,7 @@ Great! You are now ready to [configure the project. ⬇️](#configuration-)
 
 ### Configuration ⚙
 
-Either modify the [`./config.yaml`](./config.yaml) file with your MQTT and Airthings Wave(s) information, or ideally [declare environment variables](https://www.balena.io/docs/learn/manage/serv-vars/) that will then be automatically replaced in the said configuration file.
+Either modify the [`./docker/config.yaml`](./docker/config.yaml) file with your MQTT and Airthings Wave(s) information, or ideally [declare environment variables](https://www.balena.io/docs/learn/manage/serv-vars/) that will then be automatically replaced in the said configuration file.
 
 I **strongly** suggest simply using environment variables, either at the whole fleet level, at the single device level, or at a mix of both. Configuration is easier to update this way and [if you live in a McMansion](https://www.ted.com/talks/kate_wagner_i_hate_mcmansions_and_you_should_too) you can provision multiple devices with the same codebase. Yay!
 
@@ -141,7 +141,7 @@ WAVES_NAME_3  radon/garage
 WAVES_ADDR_3  cc:78:ab:00:00:0c
 ```
 
-The Waves names are used as MQTT topic prefixes, so name them however you prefer. If you have more than one Wave that you want to query, do modify the [`./config.yaml`](./config.yaml) file to add more entries.
+The Waves names are used as MQTT topic prefixes, so name them however you prefer. If you have more than one Wave that you want to query, do modify the [`./docker/config.yaml`](./docker/config.yaml) file to add more entries.
 
 Which MAC address to use? Leave that empty for now and [proceed to the first run below. ⬇️](#first-run-)
 
@@ -166,7 +166,7 @@ SSH into your device (only if _development mode_ was selected earlier) or use th
 python /usr/src/app/find_wave.py
 ```
 
-Press Ctrl+C when scanning seems to be done. Take note of the MAC address for the Wave that you want to use, and either modify [`./config.yaml`](./config.yaml) or ideally create sets of environment variables for each Wave that you want to use.
+Press Ctrl+C when scanning seems to be done. Take note of the MAC address for the Wave that you want to use, and either modify [`./docker/config.yaml`](./docker/config.yaml) or ideally create sets of environment variables for each Wave that you want to use.
 
 Once configured, either `git push` your changes or restart the device.
 
@@ -204,7 +204,7 @@ Compared to the [balena solution](#balena-), here the regular [`./Dockerfile`](.
 ### Build and run 🏗️
 
 1. Fork or clone this project's repository.
-2. Edit the [`./env.list`](./env.list) file to setup your environment variables. [See configuration above ⬆️](#configuration-) for details.
+2. Edit the [`./docker/env.list`](./docker/env.list) file to setup your environment variables. [See configuration above ⬆️](#configuration-) for details.
 
 3. Build the image:
 
@@ -225,7 +225,7 @@ Compared to the [balena solution](#balena-), here the regular [`./Dockerfile`](.
 
    ```shell
    docker run --detach --restart=unless-stopped \
-     --env-file=env.list \
+     --env-file=docker/env.list \
      --net=host --cap-add=NET_ADMIN \
      --name=airthingswave \
      airthingswave
@@ -251,7 +251,7 @@ Once ready and working, you can alternatively use this example one-liner to buil
 
 ```shell
 docker run --detach --restart=unless-stopped \
-  --env-file=env.list \
+  --env-file=docker/env.list \
   --net=host --cap-add=NET_ADMIN \
   --name=airthingswave $(docker build --quiet .)
 ```

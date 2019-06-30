@@ -32,8 +32,8 @@ LABEL maintainer="René-Marc Simard @renemarc" \
       org.opencontainers.image.url="https://airthings.com/wave/" \
       org.opencontainers.image.vendor="René-Marc Simard" \
       org.opencontainers.image.version="${VERSION}" \
-      org.label-schema.docker.cmd="docker run --detach --restart=unless-stopped --env-file=env.list --net=host --cap-add=NET_ADMIN --name=airthingswave \$(docker build --quiet .)" \
-      org.label-schema.docker.cmd.debug="docker run -it --rm --env-file=env.list --net=host --cap-add=NET_ADMIN --name=airthingswave \$(docker build --quiet .) bash" \
+      org.label-schema.docker.cmd="docker run --detach --restart=unless-stopped --env-file=docker/env.list --net=host --cap-add=NET_ADMIN --name=airthingswave \$(docker build --quiet .)" \
+      org.label-schema.docker.cmd.debug="docker run -it --rm --env-file=docker/env.list --net=host --cap-add=NET_ADMIN --name=airthingswave \$(docker build --quiet .) bash" \
       org.label-schema.docker.params="MQTT_BROKER=string   address of MQTT broker, \
 MQTT_PORT=integer    port number of MQTT broker, \
 MQTT_USERNAME=string MQTT broker user, \
@@ -71,9 +71,9 @@ RUN apk add \
 
 # Copy project files in their proper locations
 ARG CRON_PERIOD=hourly
-COPY ["crontask.sh", "/etc/periodic/${CRON_PERIOD}/airthingswave-mqtt"]
-COPY ["docker-entrypoint.sh", "/usr/local/bin/"]
-COPY ["config.yaml", "README.md", "start.sh", "./"]
+COPY ["docker/crontask.sh", "/etc/periodic/${CRON_PERIOD}/airthingswave-mqtt"]
+COPY ["docker/docker-entrypoint.sh", "/usr/local/bin/"]
+COPY ["docker/config.yaml", "docker/start.sh", "README.md", "./"]
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
